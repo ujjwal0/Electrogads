@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+    <title></title>
+    <style>
+      body {font-family:sans-serif;background-image:url("background-img.jpg");color: black;}
+      
+      form{
+        border:3px solid grey;
+        border-radius: 15px;
+        box-shadow: 2px 3px 3px 3px rgb(85, 84, 84);
+        background-color: white;
+        width: 50%;
+        margin-left: 24.5%;
+      }
+      input[type=text], input[type=password] {
+        box-sizing: border-box;
+          padding: 15px;
+          width: 90%;
+          display: inline-block;
+          margin: 7px 0px 22px 20px;
+          background: #e4e4e4a8;
+          border: 2px solid black;
+          border-radius: 15px;
+          
+      }
+
+
+      hr {
+       border: 1px solid gray;
+        margin-bottom: 25px;
+      }
+      button {
+         background-color: white;
+         color: black;
+         padding: 14px 20px;
+         margin: 16px 0 0 30px;
+         border: 2px solid black;
+         cursor: pointer;
+         width: 35%;
+         border-radius: 9px;
+         opacity: 0.8;
+        }
+        button:hover {
+           opacity:1;
+        }
+        .cancelbtn {
+         padding: 14px 20px;
+          background-color: black;
+          color: white;
+          margin-left: 80px;
+        }
+       label{
+        padding-left: 20px;
+       }
+
+     
+
+    </style>
+    
+    </head>
+    <body>
+        
+        <form>
+            <h1 style="text-align:center;">Sign Up</h1>
+        <h5 style="text-align:center;">Please fill in this form to create an account.</h5>
+        <hr>
+            <label for="userId">User Id:</label><br>
+            <input type="text" name="userId" placeholder="enter your user id"><br>
+            <label for="Password">Password:</label><br>
+            <input type="password"  name="Password" placeholder="enter password"><br>
+
+            <label for="conPassword">Confirm Password:</label><br>
+            <input type="password"  name="Password" placeholder="enter password"><br>
+
+            <input type="checkbox" style="margin-left: 20px ;">remember me<br>
+            <div class="btn">
+            <button type="submit" class="cancelbtn">cancel</button> 
+            <button type="submit" class="submitbtn">submit</button>
+            </div>
+
+            <p style="text-align: right; margin-right: 5px;">Already Registered <a href="login.html" style="color: rgb(0, 34, 253);">Login</a></p>
+          </form>
+         
+        
+       
+    </body>
+</html>

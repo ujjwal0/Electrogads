@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <style>
+            body {font-family: sans-serif;color: white;
+                background-image:url(background-img.jpg);
+                background-repeat: no-repeat;
+             background-size:cover}
+            input[type=text],input[type=email], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+           
+            }
+            
+            .container {
+                
+                border-radius: 5px;
+                height: 650px;
+                width: 500px;
+                margin:auto;
+                border:2px solid white;
+
+              
+              padding: 20px;
+            }
+            .submit{
+               margin-left: 205px;
+               background-color: #ffffff;
+               color: black;
+                padding: 12px 20px;
+                 border: 2px solid ;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            .submit:hover {
+               background-color: transparent;
+               color: white;
+               transform: scale(1.1);
+           }
+        </style>
+        
+    <title></title>
+       
+    </head>
+    <body>  
+        <div class="container">
+            <h3 style="text-align: center;">FEEDBACK</h3>
+       <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" placeholder="enter your first name"><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" name="lname" placeholder="enter your last name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email"  name="email" placeholder="abc@gmail.com"><br><br><br>
+
+        <label for="rating">rate us:</label>
+        <input type="radio" name="rating" >1
+        <input type="radio" name="rating" >2
+        <input type="radio" name="rating" >3
+        <input type="radio" name="rating" >4
+        <input type="radio" name="rating" >5
+        <br><br><br>
+
+       <label for="suggestion">suggestions:</label><br>
+       <textarea name="suggestion" placeholder="any suggestions" cols="70" rows="10"></textarea>
+        
+       <button type="submit" class="submit">submit</button>
+       </form>
+    </div>
+    </body>
+</html>

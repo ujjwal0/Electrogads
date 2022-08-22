@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <style>
+            form {border: 3px solid #636363;border-radius: 15px;box-shadow:2px 3px 3px 3px #989898; width: 50%; margin-left: 24.5%;background-color: white;
+            }
+            body {font-family:sans-serif;background-image:url("background-img.jpg") ;color: black;}
+            
+
+            input[type=text], input[type=password] {
+            width: 90%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+             border: 2px solid rgb(3, 3, 3);
+             border-radius: 15px;
+             background-color: #ccc;
+             box-sizing: border-box;
+             margin-left: 20px;
+            }
+
+            button {
+         background-color: white;
+         color: black;
+         padding: 14px;
+         margin: 16px 0 20px 40px;
+         border: 2px solid black;
+         cursor: pointer;
+         width: 35%;
+         border-radius: 9px;
+         opacity: 0.8;
+        }
+        button:hover {
+           opacity:1;
+        }
+        .cancelbtn {
+         padding: 14px 20px;
+          background-color:black;
+          color: white;
+        }
+        .login{
+            margin-left: 70px;
+        }
+          .imgcontainer {
+        
+            text-align: center;
+             margin: 5px 0 5px 0;
+          }
+          img.avatar {
+            
+          width: 22%;
+          border-radius: 50%;
+        
+          }
+        .signup{
+            float: right;
+        }
+        label{
+            padding-left: 20px;
+        }
+        
+        </style>
+        
+    </head>
+    <body>
+
+       
+        <h1 style="text-align:center ;color: white;">Login Form</h1><br><br>
+
+        
+    <form>
+
+        <div class="imgcontainer">
+            <img src="avtar.png" class="avatar">
+          </div>
+
+        <label for="userId">User Id:</label><br>
+            <input type="text" id="userId" placeholder="enter your user id"><br>
+            <label for="Password">Password:</label><br>
+            <input type="password"  id="Password" placeholder="enter password"><br>
+
+            <input type="checkbox" style="margin-left:20px ;">remember me<br>
+
+           
+            <button type="submit" class="cancelbtn">cancel</button>
+            <button type="submit" class="login"  onclick = "openPopUp()">Login</button> <br>
+            <span style="margin-left:5px ;">Forgot <a href="#" style="color:rgb(0, 8, 255)  ;">password?</a></span>
+            <span class="signup" style="margin-right:5px ;"> new user <a href="signup.html" style="color: rgb(0, 8, 255);" >Sign up</a></span>
+        </form> 
+       
+    <script>
+        function openPopUp() {
+            alert('login successful');
+         var newWindow = window.open("home.html");
+      }
+    </script>
+    </body>
+</html>
